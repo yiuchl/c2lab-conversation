@@ -1,20 +1,26 @@
-// let options = {
-//     root: document.querySelector('#scrollArea'),
-//     rootMargin: '0px',
-//     threshold: 1.0
-// }
+let observerOptions = {
+    rootMargin: '0px',
+    threshold: .11
+}
 
-// let target = document.querySelector('.first-item');
+var observer = new IntersectionObserver(observerCallback, observerOptions);
 
-// let callback = (entries, observer) => {
-//     entries.forEach((entry) => {
-//         if(entry.isIntersecting){
-//             target.classList.add('visible')
-//         }
-//     });
-// };
+function observerCallback(entries, observer) {
+    entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          console.log('entry', entry)
+          entry.target.classList.add('visible')
+        } else {
+          entry.target.classList.remove('visible')
+        }
+    });
+};
 
-// let observer = new IntersectionObserver(callback, options);
+let target = '.peekaboo';
+document.querySelectorAll(target).forEach((i) => {
+    if (i) {
+        observer.observe(i);
+    }
+});
 
-
-// observer.observe(target);
+//room and door metaphor
