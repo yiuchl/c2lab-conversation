@@ -176,6 +176,22 @@ img {
   .shrink {
     transition: all .2s ease-in-out;
   }
+
+  .child {
+    opacity: 0;
+  }
+
+  .child-1 {
+    opacity: 0;
+  }
+
+  .child-2 {
+    opacity: 0;
+  }
+
+  .parent {
+    opacity: 0;
+  }
 }
 
 .flex-container {
@@ -219,4 +235,26 @@ img {
   to {
     transform: rotate(360deg);
   }
+}
+
+.child {
+  position: absolute;
+  top: 0;
+}
+
+.child-1 {
+  text-align: start;
+}
+/* resize window to het the rocks to touch. when the rocks touch, they disappear.*/
+.child-2 {
+  left: -1.85em;
+}
+
+.child-2:hover{
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+.parent {
+  position: relative;
 }
