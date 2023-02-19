@@ -245,15 +245,16 @@ img {
 .child-1 {
   text-align: start;
 }
+
 /* resize window to het the rocks to touch. when the rocks touch, they disappear.*/
 .child-2 {
   left: -1.85em;
 }
 
-.child-2:hover{
+/* .child-2:hover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
-}
+} */
 
 .parent {
   position: relative;

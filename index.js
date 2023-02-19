@@ -1,6 +1,6 @@
 let observerOptions = {
     rootMargin: '0px',
-    threshold: .11
+    threshold: .111
 }
 
 var observer = new IntersectionObserver(observerCallback, observerOptions);
