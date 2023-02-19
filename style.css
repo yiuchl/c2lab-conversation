@@ -1,27 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
-html{
-    max-width: 100%;
-    overflow-x: hidden;
-    font-family: 'Rubik', sans-serif;
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
 }
 
-body{
-    margin: 0;
-    padding: 5.8vh;
-    font-family: 'Rubik', sans-serif;
-    background: #161616;
-    font-size: 1.75em;
-  }
+body {
+  margin: 0;
+  padding: 5.8vh;
+  font-family: 'Rubik', sans-serif;
+  background: #161616;
+  font-size: 1.75em;
+}
 
-  .topbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    font-size: 2.22em;
-    transition: .5s;
-   
-    /* 
+.topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 2.22em;
+  transition: .5s;
+
+  /* 
     font-family: Comic Sans MS, Comic Sans, cursive;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
@@ -31,170 +31,192 @@ body{
 
     em is a CSS unit relative to the font size of the parent element, while rem is a CSS unit relative to the font size of an HTML element. 
  */
- 
- /* visibility */
-  }
-.peekaboo{
+
+  /* visibility */
+}
+
+.peekaboo {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 1.5s ease, transform .3s ease;
 }
-  .peekaboo.visible{
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  
-h1{
-    color: #f5efe1;
-    font-size: x-large;
+
+.peekaboo.visible {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
-h3{
-    color: #f5efe1;
+h1 {
+  color: #f5efe1;
+  font-size: x-large;
 }
 
-p{
+h3 {
+  color: #f5efe1;
+}
+
+p {
   line-height: 1.22em;
   display: flex;
   flex-wrap: wrap;
 }
 
-  section{
-    position: relative;
-    top: 15em;
-    width: 100%;
-    height: 80vh;
-  }
+section {
+  position: relative;
+  top: 15em;
+  width: 100%;
+  height: 80vh;
+}
 
-  /*the hovers are the same color because the two characters are connecting*/
+/*the hovers are the same color because the two characters are connecting*/
 
-  .evelyn{
-    color:#f5efe1;
-  }
+.evelyn {
+  color: #f5efe1;
+}
 
-  .evelyn:hover{
-    color:mediumvioletred;
-  }
+.evelyn:hover {
+  color: mediumvioletred;
+}
 
-  .evelyn-start{
-    height: 100vh;
-    color:#f5efe1;
-    transition: 2.2s ease;
-  }
-  
-  .fuck:hover{
-    text-transform: uppercase;
-  }
+.evelyn-start {
+  height: 100vh;
+  color: #f5efe1;
+  transition: 2.2s ease;
+}
 
-  .joy{
-    color:palevioletred;
-  }
+.fuck:hover {
+  text-transform: uppercase;
+}
+
+.joy {
+  color: palevioletred;
+}
 
 .joy:hover {
-    color:mediumvioletred;
+  color: mediumvioletred;
+}
+
+.e-rock {
+  text-align: end;
+}
+
+.j-rock {
+  text-align: start;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+.e-rock:hover {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
   }
 
-  .e-rock{
-    text-align: end;
-  }
-
-  .j-rock{
-    text-align: start;
-  }
-
-  img{
-    width: 20%;
-    height: 20%;
-  }
-
-  .e-rock:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 0.5s;
-    /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    /* 10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  /* 10% { transform: translate(-1px, -2px) rotate(-1deg); }
     20% { transform: translate(-3px, 0px) rotate(1deg); }
     30% { transform: translate(3px, 2px) rotate(0deg); }
     40% { transform: translate(1px, -1px) rotate(1deg); } */
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
 
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 .hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    transform: translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
-    transition-duration: 0.3s;
-    transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
 }
 
 .hvr-grow:hover,
 .hvr-grow:focus,
 .hvr-grow:active {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 /*the spin is different at a smaller screen size, I like the chasing effect when it is viewed at a smaller scale*/
 @media (max-width: 850px) {
-    .flex-container {
-      flex-direction: column;
-    }
-    .shrink {
-     transition: all .2s ease-in-out; 
-    }
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .shrink {
+    transition: all .2s ease-in-out;
+  }
 }
 
 .flex-container {
-    display: flex;
-    /*  flex-direction: column;  fonts can use typ-scale.com; 16px for type;  flex-direction: row-reverse; all be in percent up to 100; vw or vh*/
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  /*The greater than sign (>) selector in CSS is used to select the element with a specific parent.*/
-  .flex-container > div {
-    text-align: center;
-    line-height: 10vh;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:50vw;
-    margin: 5vw;
-    height: 50vh;
-    padding: 0px;
-    font-size: 30px;
+  display: flex;
+  /*  flex-direction: column;  fonts can use typ-scale.com; 16px for type;  flex-direction: row-reverse; all be in percent up to 100; vw or vh*/
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/*The greater than sign (>) selector in CSS is used to select the element with a specific parent.*/
+.flex-container>div {
+  text-align: center;
+  line-height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  margin: 5vw;
+  height: 50vh;
+  padding: 0px;
+  font-size: 30px;
+}
+
+.shrink:hover {
+  transform: scale(0.77);
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
 
-    .shrink:hover { 
-    transform: scale(0.77); 
-    }
-    
-    .spin{
-      animation-name: spin;
-      animation-duration: 5000ms;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; 
-    }
-    
-    @keyframes spin {
-        from {
-            transform:rotate(0deg);
-        }
-        to {
-            transform:rotate(360deg);
-        }
-    }
-    
-   
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -7,11 +7,11 @@ var observer = new IntersectionObserver(observerCallback, observerOptions);
 
 function observerCallback(entries, observer) {
     entries.forEach(entry => {
-        if(entry.isIntersecting) {
-          console.log('entry', entry)
-          entry.target.classList.add('visible')
+        if (entry.isIntersecting) {
+            console.log('entry', entry)
+            entry.target.classList.add('visible')
         } else {
-          entry.target.classList.remove('visible')
+            entry.target.classList.remove('visible')
         }
     });
 };

@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
- <!--First line of dialogue is animated-->
- <script type="text/javascript">
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        if($(this).scrollTop() < 100){
-          $(".topbar").css({"opacity" : "1"})
+  <!--First line of dialogue is animated-->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() < 100) {
+          $(".topbar").css({ "opacity": "1" })
         }
         else {
-          $(".topbar").css({"opacity" : "0"})
+          $(".topbar").css({ "opacity": "0" })
         }
       })
     })
 
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        if($(this).scrollTop() < 100){
-          $(".evelyn-start").css({"opacity" : "1"})
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() < 100) {
+          $(".evelyn-start").css({ "opacity": "1" })
         }
         else {
-          $(".evelyn-start").css({"opacity" : "0"})
+          $(".evelyn-start").css({ "opacity": "0" })
         }
       })
     })
-    </script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visual Conversation</title>
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Conversation</title>
 </head>
+
 <body>
-    <!--joy's opening line-->
-   <div class="topbar">
+  <!--joy's opening line-->
+  <div class="topbar">
     <p class="joy">Oh, good. You're here too.</p>
   </div>
-  
+
   <section>
     <!--start of main conversation-->
-      <div class="peekaboo">
-      <p class="evelyn-start">Joy?<br>Where are we?</p>
-      </div>
-    
     <div class="peekaboo">
-      <p class="joy">One of the universes where the conditions weren't right for life to form.<br>Most of them are like this, actually.
-    </p>
+      <p class="evelyn-start">Joy?<br>Where are we?</p>
     </div>
-  
+
+    <div class="peekaboo">
+      <p class="joy">One of the universes where the conditions weren't right for life to form.<br>Most of them are like
+        this, actually.
+      </p>
+    </div>
+
     <div class="peekaboo">
       <p class="evelyn">It's nice.</p>
     </div>
 
     <div class="peekaboo">
-          <p class="joy">Yeah. You can just sit here, and everything feels really...far away.</p>
+      <p class="joy">Yeah. You can just sit here, and everything feels really...far away.</p>
     </div>
-<section>
-   <div class="peekaboo">
-      <p class="evelyn">Joy.</p>
-      <p class="evelyn">I'm sorry about ruining everything.</p>  
-    </div>
-    
-    <div class="peekaboo">
-       <p class="joy">Shhhh.<br>You don't have to worry about that here.</p>
-       <!--"Just be a rock."" is emphasized
+    <section>
+      <div class="peekaboo">
+        <p class="evelyn">Joy.</p>
+        <p class="evelyn">I'm sorry about ruining everything.</p>
+      </div>
+
+      <div class="peekaboo">
+        <p class="joy">Shhhh.<br>You don't have to worry about that here.</p>
+        <!--"Just be a rock."" is emphasized
             href="#" class="hvr-grow" style="color:palevioletred"
         -->
-    <p class="joy">Just be a rock.</p>
-   
-    <div class="peekaboo">
-      <p class="evelyn">I just feel so stupid—</p>
-    </div>
+        <p class="joy">Just be a rock.</p>
 
-    <div class="peekaboo">
-      <p class="joy">God! Please. We're all stupid!<br>Small, stupid humans. It's like our whole deal.</p>
-    </div>
-    </div>
+        <div class="peekaboo">
+          <p class="evelyn">I just feel so stupid—</p>
+        </div>
 
-</section>
-  
+        <div class="peekaboo">
+          <p class="joy">God! Please. We're all stupid!<br>Small, stupid humans. It's like our whole deal.</p>
+        </div>
+      </div>
+
+    </section>
+
     <section>
       <div class="peekaboo">
         <p class="joy">For most of our history, we knew the Earth was the center of the universe.<br>
           We killed and tortured people for saying otherwise.<br><br>
-          That is, until we discovered that the Earth is actually revolving around the Sun, which is just one sun out of trillions of suns.<br><br>
-          And now look at us, trying to deal with the fact that all of that exists inside of one universe out of who knows how many.</p>
-      </div>  
+          That is, until we discovered that the Earth is actually revolving around the Sun, which is just one sun out of
+          trillions of suns.<br><br>
+          And now look at us, trying to deal with the fact that all of that exists inside of one universe out of who
+          knows how many.</p>
+      </div>
 
       <div class="peekaboo">
         <p class="joy">
@@ -100,65 +105,67 @@
       </div>
 
       <div class="peekaboo">
-        <p class="joy">And who knows what great new discovery is coming next...<br>to make us feel like even smaller pieces of shit.</p>      
+        <p class="joy">And who knows what great new discovery is coming next...<br>to make us feel like even smaller
+          pieces of shit.</p>
       </div>
 
-        <!--break-->
-        <section>
-          <!--deciding if Language (and other section starters) should be visible the whole time
+      <!--break-->
+      <section>
+        <!--deciding if Language (and other section starters) should be visible the whole time
           <div class="peekaboo"><p class="evelyn">Language.</p></div>
           -->
-          <div class="peekaboo">
-            <p class="evelyn">Language.</p>
-          </div>
+        <div class="peekaboo">
+          <p class="evelyn">Language.</p>
+        </div>
 
-          <div class="peekaboo">
-            <p class="joy">Seriously?</p>
-          </div>
+        <div class="peekaboo">
+          <p class="joy">Seriously?</p>
+        </div>
 
-          <div class="peekaboo">
-            <p class="evelyn">I'm joking. That was a joke.</p>
-          </div>
-      
-          <div class="peekaboo">
-            <p class="joy">ha ha ha</p>
-          </div>
+        <div class="peekaboo">
+          <p class="evelyn">I'm joking. That was a joke.</p>
+        </div>
 
-          <div class="peekaboo">
-            <p class="evelyn fuck">A big fucking joke!</p>
-            <!-- <p class="evelyn fuck">fucking</p>
+        <div class="peekaboo">
+          <p class="joy">ha ha ha</p>
+        </div>
+
+        <div class="peekaboo">
+          <p class="evelyn fuck">A big fucking joke!</p>
+          <!-- <p class="evelyn fuck">fucking</p>
             <p class="evelyn">joke!</p> -->
-          </div>
+        </div>
 
         <!--laugh together-->
         <div class="peekaboo">
-            <div class="flex justify-between">
+          <div class="flex justify-between">
             <div class="hvr-grow joy">ha ha ha ha ha
             </div>
             <div class="hvr-grow evelyn">ha ha ha ha ha
             </div>
-        </div>
+          </div>
         </div>
         <!--sections to break visually-->
-            <section>
-                
-              <div class="peekaboo">
-                <p class="joy">fuck.</p>
-              </div>
+        <section>
 
-        <!--new section-->
-                <section>
-                    
-                  <div class="peekaboo">
-                    <p class="evelyn">What's wrong?</p>
-                  </div>
+          <div class="peekaboo">
+            <p class="joy">fuck.</p>
+          </div>
 
-                  <div class="peekaboo">
-                    <p class="joy">I've been trapped like this for long...experiencing everything...<br>I was hoping you would see something I didn't...<br>that you would convince me there was another way.</p>
-                  </div>
-                <div class="peekaboo">
-                  <p class="evelyn">What are you talking about?</p>
-                </div>
+          <!--new section-->
+          <section>
+
+            <div class="peekaboo">
+              <p class="evelyn">What's wrong?</p>
+            </div>
+
+            <div class="peekaboo">
+              <p class="joy">I've been trapped like this for long...experiencing everything...<br>I was hoping you would
+                see something I didn't...<br>that you would convince me there was another way.</p>
+            </div>
+            <div class="peekaboo">
+              <p class="evelyn">What are you talking about?</p>
+            </div>
 
             <section>
               <!-- characters as rocks -->
@@ -170,45 +177,46 @@
                 <img src="./images/eeaao-rock.png" alt="evelyn as a rock">
               </div>
 
-            <!--mini section break, woo-->
-                    <section>
-                      <div class="peekaboo">
-                        <p class="joy">Stop that!<br>You aren't supposed to move here. You're just a rock.</p>
-                      </div> 
+              <!--mini section break, woo-->
+              <section>
+                <div class="peekaboo">
+                  <p class="joy">Stop that!<br>You aren't supposed to move here. You're just a rock.</p>
+                </div>
 
-                      <div class="peekaboo">
-                        <p class="hvr-grow evelyn">There are no rules!</p>
-                      </div>
+                <div class="peekaboo">
+                  <p class="hvr-grow evelyn">There are no rules!</p>
+                </div>
 
-                    <!--Evelyn spinning to catch up to her daughter-->
-                    </section>
-                   
-                    <section>
-                      <div class="peekaboo">
-                        <div class="flex-container spin">
-                          <h3 class="evelyn hvr-grow">I'm gonna get you!</h3>
-                        </div>
-                      </div>  
-                    </section>
+                <!--Evelyn spinning to catch up to her daughter-->
+              </section>
 
-                    <!--Joy rolling away, the period and bullet point represent Evelyn and Joy. 
+              <section>
+                <div class="peekaboo">
+                  <div class="flex-container spin">
+                    <h3 class="evelyn hvr-grow">I'm gonna get you!</h3>
+                  </div>
+                </div>
+              </section>
+
+              <!--Joy rolling away, the period and bullet point represent Evelyn and Joy. 
                         <h3 class="shrink" style="color: palevioletred">.</h3>
                         <h1><br>•</h1>
                     -->
-                   <div class="peekaboo">
-                    <div class="flex-container spin">
-                        <h3 class="shrink joy">Don't come near me.</h3>
-                      </div>
-                   </div>
+              <div class="peekaboo">
+                <div class="flex-container spin">
+                  <h3 class="shrink joy">Don't come near me.</h3>
+                </div>
+              </div>
             </section>
-                </section>
-            </section>
+          </section>
         </section>
+      </section>
     </section>
   </section>
 
-<!--conversation used as reference: https://www.youtube.com/watch?v=A_Z3LHSH9Mg-->
-<script src="./index.js"></script>
+  <!--conversation used as reference: https://www.youtube.com/watch?v=A_Z3LHSH9Mg-->
+  <script src="./index.js"></script>
 
 </body>
+
 </html>
