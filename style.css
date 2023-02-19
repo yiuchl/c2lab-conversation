@@ -8,19 +8,10 @@ html{
 
 body{
     margin: 0;
-    padding: 10px;
+    padding: 5em;
     font-family: 'Rubik', sans-serif;
     background: #161616;
   }
-  
-h1{
-    color: #f5efe1;
-    font-size: x-large;
-}
-
-h3{
-    color: #f5efe1;
-}
 
   .topbar{
     position: fixed;
@@ -43,9 +34,26 @@ h3{
     olivedrab
     tomato
     #f5efe1;
+
+    em is a CSS unit relative to the font size of the parent element, while rem is a CSS unit relative to the font size of an HTML element. 
     
  */
   }
+
+h1{
+    color: #f5efe1;
+    font-size: x-large;
+}
+
+h3{
+    color: #f5efe1;
+}
+
+p{
+  line-height: 1.22em;
+  display: flex;
+  flex-wrap: wrap;
+}
 
   section{
     position: relative;
@@ -56,11 +64,10 @@ h3{
 
   .evelyn{
     color:#f5efe1;
-    line-height: 18px;
   }
 
   .evelyn:hover{
-    color:palevioletred;
+    color:mediumvioletred;
   }
 
   .joy{
@@ -68,12 +75,17 @@ h3{
   }
 
 .joy:hover {
-    color:#f5efe1;
+    color:mediumvioletred;
   }
 
+/*
+p{
+  opacity: 0;
+  transition: opacity 3s ease;
+}
 
-/*.together{
-    color:mediumvioletred;
+.visible{
+  opacity: 1;
 }
 */
 
@@ -94,7 +106,7 @@ h3{
     transform: scale(1.5);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 850px) {
     .flex-container {
       flex-direction: column;
     }
@@ -102,6 +114,7 @@ h3{
      transition: all .2s ease-in-out; 
     }
 }
+
 .flex-container {
     display: flex;
     /*  flex-direction: column;  fonts can use typ-scale.com; 16px for type;  flex-direction: row-reverse; all be in percent up to 100; vw or vh*/
