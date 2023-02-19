@@ -79,7 +79,7 @@ p{
   .evelyn-start{
     height: 100vh;
     color:#f5efe1;
-    transition: 2.2s linear;
+    transition: 2.2s ease;
   }
   
   .fuck:hover{
